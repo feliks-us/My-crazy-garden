@@ -11,8 +11,15 @@ public class UIPanel : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("HighAppleScore")) {MaxAppleScore = PlayerPrefs.GetInt("HighAppleScore");}
-        else PlayerPrefs.SetInt("HighAppleScore", 50);
+        if (PlayerPrefs.HasKey("HighAppleScore")) 
+        { 
+            MaxAppleScore = PlayerPrefs.GetInt("HighAppleScore"); 
+        }
+        else 
+        { 
+            PlayerPrefs.SetInt("HighAppleScore", 50);
+            MaxAppleScore = PlayerPrefs.GetInt("HighAppleScore");
+        }
     }
     void Start()
     {

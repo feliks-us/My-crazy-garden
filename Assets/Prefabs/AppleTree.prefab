@@ -82,10 +82,15 @@ MonoBehaviour:
   ApplePrefab: {fileID: 3748867251630284683, guid: 59043030d8b21b34995a7cf290691e62, type: 3}
   AppleSpawnerLeft: {fileID: 8494795730029895418}
   AppleSpawnerRight: {fileID: 831590443989126478}
-  _treeSpeed: 3
+  GoldenApplePrefab: {fileID: 2798944731223293694, guid: 6d64e5911094c1248a7842030b44f2e1, type: 3}
+  DeadBirdPrefab: {fileID: 8770119792620598373, guid: 7a1e88cbdb14216499f92f17b2224c4d, type: 3}
+  _treeSpeedMin: 3
   _treeMoveRandom: 0.02
   _leftAndRignEdge: 8
   _secondsBetweenAppleDrops: 1
+  _scoreDetector: 0
+  _treeSpeed: 3
+  _speedDelta: 40
 --- !u!50 &5284778586365895874
 Rigidbody2D:
   serializedVersion: 4

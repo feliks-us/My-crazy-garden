@@ -6,10 +6,15 @@ using UnityEngine;
 public class Basket : MonoBehaviour
 {
     public static int AppleScore = 0;
-        
+
+    private void Start ()
+    {
+        AppleScore = 0;
+    }
+
     void Update()
     {
-        if (Time.timeScale == 0f)
+               if (Time.timeScale == 0f)
         {
             return;
         }
@@ -18,11 +23,25 @@ public class Basket : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) 
     {
         GameObject collidedWith = collision.gameObject;
-        if (collidedWith.tag == "Apple")
+        string colisionTag = collidedWith.tag;
+        switch (colisionTag)
         {
-            Destroy(collidedWith);
-            AppleScore++;
-        }          
+            case ("Apple"):
+                AppleScore++;
+                break;
+            case ("GoldenApple"):
+                AppleScore += 20;
+                break;
+            case ("DeadBird"):
+                if(AppleScore >= 50)
+                {
+                    AppleScore -= 50;
+                }
+                else AppleScore = 0;
+                break;
+        }
+        Destroy(collidedWith);
+
     }
     private void BasketPosition()
     {
@@ -31,13 +50,13 @@ public class Basket : MonoBehaviour
         Vector3 _mousePos3D = Camera.main.ScreenToWorldPoint(_mousePos2D);
         Vector3 _basketPos3D = this.transform.position;
 
-        if(_mousePos3D.x > 8)
+        if(_mousePos3D.x > 8.5f)
         {
-            _mousePos3D.x = 8;
+            _mousePos3D.x = 8.5f;
         }
-        else if(_mousePos3D.x < -8)
+        else if(_mousePos3D.x < -8.5f)
         {
-            _mousePos3D.x = -8;
+            _mousePos3D.x = -8.5f;
         }
        
         _basketPos3D.x = _mousePos3D.x;
