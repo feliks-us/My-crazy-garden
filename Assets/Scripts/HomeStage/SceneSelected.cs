@@ -10,6 +10,20 @@ public class SceneSelected : MonoBehaviour
         SceneManager.LoadScene("ApplePicker");
     }
 
+    public void UploadASceneCarrotBeds()
+    {
+        SceneManager.LoadScene("CarrotBeds");
+    }
+
+    public void UploadAScenePestControl()
+    {
+        SceneManager.LoadScene("PestControl");
+    }
+    public void UploadASceneNoName()
+    {
+        SceneManager.LoadScene("NoName");
+    }
+
     public void UploadASceneShop()
     {
         SceneManager.LoadScene("Shop");

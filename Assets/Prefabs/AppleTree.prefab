@@ -84,6 +84,8 @@ MonoBehaviour:
   AppleSpawnerRight: {fileID: 831590443989126478}
   GoldenApplePrefab: {fileID: 2798944731223293694, guid: 6d64e5911094c1248a7842030b44f2e1, type: 3}
   DeadBirdPrefab: {fileID: 8770119792620598373, guid: 7a1e88cbdb14216499f92f17b2224c4d, type: 3}
+  BeehivePrefab: {fileID: 2798944731223293694, guid: 5bbfab2d29c355b4bb1fcd51e15d9fc6, type: 3}
+  FallenStarPrefab: {fileID: 2798944731223293694, guid: af4186568b05e16418bf9cfa0b0aa7d6, type: 3}
   _treeSpeedMin: 3
   _treeMoveRandom: 0.02
   _leftAndRignEdge: 8

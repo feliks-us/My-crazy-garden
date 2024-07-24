@@ -1,65 +1,58 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ApplePicker : MonoBehaviour
 {
-    public int NumberOfBasket;
-    public Text BasketGT;
-    public GameObject LoosPanel;
-    public GameObject PausePanel;
-    public bool PauseGame;
-
+    public static int NumberOfBasket;
+    private Text BasketGT;
+    [SerializeField] private StopGamePanel _stopGamePanel;
+    
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("BasketsNumber")) {NumberOfBasket = PlayerPrefs.GetInt("BasketsNumber");}
-        else {PlayerPrefs.SetInt("BasketsNumber", 3);}
+        if (PlayerPrefs.HasKey("BasketsNumber")) { NumberOfBasket = PlayerPrefs.GetInt("BasketsNumber"); }
+        else 
+        {
+            PlayerPrefs.SetInt("BasketsNumber", 3);
+            NumberOfBasket = PlayerPrefs.GetInt("BasketsNumber"); 
+        }
     }
     void Start()
     {
+        Cursor.visible = false;
+        _stopGamePanel.PauseGame = false;
         Time.timeScale = 1f;
         BasketGT = GameObject.Find("NumberOfBasket").GetComponent<Text>();
         BasketGT.text = NumberOfBasket.ToString();
-        LoosPanel.SetActive(false);
+
     }
 
     void Update()
     {
         if (NumberOfBasket == 0)
         {
-            Looses();
+            _stopGamePanel.Looses();
         }
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (PauseGame)
+            if (_stopGamePanel.PauseGame)
             {
-                Resume();
+                _stopGamePanel.Resume();
             }
             else
             {
-                Pause();
+                _stopGamePanel.Pause();
             }
         }
+        if (Time.timeScale ==0f)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+        }
     }
-    public void Pause()
-    {
-        PausePanel.SetActive(true);
-        Time.timeScale = 0f;
-        PauseGame = true;
-    }
-    public void Resume()
-    {
-        PausePanel.SetActive(false);
-        Time.timeScale = 1f;
-        PauseGame = false;
-    }
-    public void Looses()
-    {
-        LoosPanel.SetActive(true);
-        Time.timeScale = 0f;
-    }
+    
     public void AppleDestroyed()
     {
         // ќтчистка всего листа падающих €блок
@@ -71,13 +64,21 @@ public class ApplePicker : MonoBehaviour
         NumberOfBasket--;
         BasketGT.text = NumberOfBasket.ToString();
     }
-    public void ReturnToHomeStage()
+
+    public void AddBasketNumber()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("HomeStage");
+        if (NumberOfBasket < 5)
+        {
+            NumberOfBasket++;
+            BasketGT.text = NumberOfBasket.ToString();
+        }
     }
-    public void RestartGame()
+
+
+
+    public void RemoveBasketNumber()
     {
-        SceneManager.LoadScene("ApplePicker");
+        NumberOfBasket--;
+        BasketGT.text = NumberOfBasket.ToString();
     }
 }

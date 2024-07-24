@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIPanel : MonoBehaviour
+public class UIPanelCarrotBeds : MonoBehaviour
 {
     public Text scoreGT;
     public Text maxScoreGT;
@@ -11,23 +11,23 @@ public class UIPanel : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("HighAppleScore")) 
+        if (PlayerPrefs.HasKey("HighCarrotScore")) 
         { 
-            MaxAppleScore = PlayerPrefs.GetInt("HighAppleScore"); 
+            MaxAppleScore = PlayerPrefs.GetInt("HighCarrotScore"); 
         }
         else 
         { 
-            PlayerPrefs.SetInt("HighAppleScore", 50);
-            MaxAppleScore = PlayerPrefs.GetInt("HighAppleScore");
+            PlayerPrefs.SetInt("HighCarrotScoreCarrot", 50);
+            MaxAppleScore = PlayerPrefs.GetInt("HighCarrotScore");
         }
     }
     void Start()
     {
-        GameObject scoreGO = GameObject.Find("AppleScore");
+        GameObject scoreGO = GameObject.Find("CarrotScore");
         scoreGT = scoreGO.GetComponent<Text>();
         scoreGT.text = "0";
 
-        GameObject maxScoreGO = GameObject.Find("AppleMaxScore");
+        GameObject maxScoreGO = GameObject.Find("CarrotMaxScore");
         maxScoreGT = maxScoreGO.GetComponent<Text>();
         maxScoreGT.text = MaxAppleScore.ToString();
     }
@@ -48,6 +48,6 @@ public class UIPanel : MonoBehaviour
     private void ChangeMaxNumberApple()
     {
         maxScoreGT.text = MaxAppleScore.ToString();
-        if (MaxAppleScore > PlayerPrefs.GetInt("HighAppleScore")) {PlayerPrefs.SetInt("HighAppleScore", MaxAppleScore);} // сохранение максимального кол-ва яблок
+        if (MaxAppleScore > PlayerPrefs.GetInt("HighCarrotScore")) {PlayerPrefs.SetInt("HighCarrotScore", MaxAppleScore);} // сохранение максимального кол-ва морковок
     }
 }

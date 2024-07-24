@@ -22,6 +22,7 @@ public class Basket : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision) 
     {
+        ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
         GameObject collidedWith = collision.gameObject;
         string colisionTag = collidedWith.tag;
         switch (colisionTag)
@@ -38,6 +39,12 @@ public class Basket : MonoBehaviour
                     AppleScore -= 50;
                 }
                 else AppleScore = 0;
+                break;
+            case ("FallenStar"):
+                apScript.AddBasketNumber(); 
+                break;
+            case ("Beehive"):
+                apScript.RemoveBasketNumber();
                 break;
         }
         Destroy(collidedWith);
