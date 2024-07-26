@@ -14,7 +14,7 @@ public class AppleTree : MonoBehaviour
     [SerializeField] private GameObject FallenStarPrefab;
 
     [SerializeField] private float _treeSpeedMin = 3f;
-    [SerializeField] private float _treeMoveRandom = 0.02f;
+    [SerializeField] private float _treeMoveRandom = 0.002f;
     [SerializeField] private float _leftAndRignEdge = 8f;
     [SerializeField] private float _secondsBetweenAppleDrops = 1f;
     private bool _spavnerSelect = true;
@@ -105,7 +105,7 @@ public class AppleTree : MonoBehaviour
         GameObject goldenApple = Instantiate<GameObject>(GoldenApplePrefab);
         goldenApple.transform.position = _appleSpawnerPosition;
         int a = Random.Range(10, 30);
-        Invoke(nameof(DropGoldenApple), a);
+        Invoke(nameof(DropGoldenApple), a + 0.5f);
     }
 
     private void DropDeadBird() // Функция создания мертвых птиц
@@ -113,7 +113,7 @@ public class AppleTree : MonoBehaviour
         GameObject deadBird = Instantiate<GameObject>(DeadBirdPrefab);
         deadBird.transform.position = _appleSpawnerPosition;
         int a = Random.Range(10, 30);
-        Invoke(nameof(DropDeadBird), a);
+        Invoke(nameof(DropDeadBird), a+0.5f);
     }
 
     private void DropBeehive() // Функция создания ульев
@@ -121,7 +121,7 @@ public class AppleTree : MonoBehaviour
         GameObject beehive = Instantiate<GameObject>(BeehivePrefab);
         beehive.transform.position = _appleSpawnerPosition;
         int a = Random.Range(10, 30);
-        Invoke(nameof(DropBeehive), a);
+        Invoke(nameof(DropBeehive), a+0.5f);
     }
 
     private void DropFallenStar() // Функция создания упавшей звезды
@@ -129,7 +129,7 @@ public class AppleTree : MonoBehaviour
         GameObject fallenStar = Instantiate<GameObject>(FallenStarPrefab);
         fallenStar.transform.position = _appleSpawnerPosition;
         int a = Random.Range(10, 30);
-        Invoke(nameof(DropFallenStar), a);
+        Invoke(nameof(DropFallenStar), a+0.5f);
     }
 
 
