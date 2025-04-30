@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: e4e2f3793e8f5ef47af5d1d62e2e9d22
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ApplePickerSprites_3
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 485
+        width: 805
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d2c3598aa0e9e4cbf497d9a2ab747f
+      internalID: 1445119979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 921
+        width: 329
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad2e1ce4d4e5aa46b87d4d0f7e60374
+      internalID: -1859699446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_7
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 721
+        width: 453
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3a3a62611623d43ba19732436e693a
+      internalID: -1412053022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 724
+        width: 308
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0383ffb8a6049b847933f22dcdd528a5
+      internalID: -2057710755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_20
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 302
+        width: 291
+        height: 396
+      alignment: 9
+      pivot: {x: 0.56691635, y: 0.07895375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c262f752f3ff1343a3f7646889af6b6
+      internalID: -1418511331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_22
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 502
+        width: 327
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf284fb9daf987f42913559b79335251
+      internalID: 456462564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 287
+        width: 372
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a785e4228e95b4b8a8fe5271ce0ec7
+      internalID: -1275362621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_38
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 249
+        width: 331
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52287f2d46285a2489f7c8971be9ca1b
+      internalID: 566146996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_40
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 66
+        width: 134
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da960be18bed8344a91bb135b79c79df
+      internalID: -1309325312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_41
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 54
+        width: 141
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b2ef63815e0b24dbd6a8e6e4ba1c28
+      internalID: -1769817815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_42
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 60
+        width: 136
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5361d6fff0b9b094c9ad210669316e25
+      internalID: 272736996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_45
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 26
+        width: 356
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa2b7e11ddb7484b9e2cd56aed91597
+      internalID: -1798441088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_0
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 66
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d10be21b11f2b468d5c0f4eeed9f2e
+      internalID: 234627108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_1
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 122
+        width: 346
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad0362b75db3274a924da33835ecb5a
+      internalID: -178440596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_2
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 124
+        width: 361
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5769b27011361439b161cb99f51b38
+      internalID: 349649576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApplePickerSprites_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 546
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269c2125f590f134281220786a75aa0a
+      internalID: 95164479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ApplePickerSprites_0: 234627108
+      ApplePickerSprites_1: -178440596
+      ApplePickerSprites_10: -1521718521
+      ApplePickerSprites_11: -1509681150
+      ApplePickerSprites_12: -1537059428
+      ApplePickerSprites_13: 1940358122
+      ApplePickerSprites_14: -14710125
+      ApplePickerSprites_15: -319594436
+      ApplePickerSprites_16: -501710406
+      ApplePickerSprites_17: -1412020534
+      ApplePickerSprites_18: 384842642
+      ApplePickerSprites_19: -622101730
+      ApplePickerSprites_2: 349649576
+      ApplePickerSprites_20: -1418511331
+      ApplePickerSprites_21: -320487892
+      ApplePickerSprites_22: 456462564
+      ApplePickerSprites_23: -347283938
+      ApplePickerSprites_24: 1004045337
+      ApplePickerSprites_25: 329202628
+      ApplePickerSprites_26: -1275362621
+      ApplePickerSprites_27: -634653515
+      ApplePickerSprites_28: -500479996
+      ApplePickerSprites_29: 111471190
+      ApplePickerSprites_3: 1445119979
+      ApplePickerSprites_30: -331429596
+      ApplePickerSprites_31: 1070142816
+      ApplePickerSprites_32: 382218146
+      ApplePickerSprites_33: 1115627647
+      ApplePickerSprites_34: 1153885036
+      ApplePickerSprites_35: -146215242
+      ApplePickerSprites_36: 2107056260
+      ApplePickerSprites_37: -1374558535
+      ApplePickerSprites_38: 566146996
+      ApplePickerSprites_39: 703616285
+      ApplePickerSprites_4: 95164479
+      ApplePickerSprites_40: -1309325312
+      ApplePickerSprites_41: -1769817815
+      ApplePickerSprites_42: 272736996
+      ApplePickerSprites_43: 1281343050
+      ApplePickerSprites_44: 465865943
+      ApplePickerSprites_45: -1798441088
+      ApplePickerSprites_46: -1402603806
+      ApplePickerSprites_47: -1554982677
+      ApplePickerSprites_48: -1545254609
+      ApplePickerSprites_49: -219016407
+      ApplePickerSprites_5: -255949678
+      ApplePickerSprites_50: 1329007982
+      ApplePickerSprites_51: 602822408
+      ApplePickerSprites_52: -603132514
+      ApplePickerSprites_53: -1572611656
+      ApplePickerSprites_54: 948280835
+      ApplePickerSprites_55: 180717514
+      ApplePickerSprites_56: -340652363
+      ApplePickerSprites_6: -1859699446
+      ApplePickerSprites_7: -1412053022
+      ApplePickerSprites_8: 769414407
+      ApplePickerSprites_9: -2057710755
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
